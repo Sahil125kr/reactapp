@@ -1,0 +1,131 @@
+.contact__container {
+    display: grid;
+    place-items: center;
+}
+
+.contact__wrapper {
+    width: fit-content;
+    display: flex;
+    gap: 2rem;
+}
+
+.contact__wrapper a {
+    background: var(--color-primary);
+    font-size: 2rem;
+    border: 2px solid transparent;
+    transition: var(--transition);
+    padding: 1rem 2rem 0.5rem;
+    border-radius: 1.5rem;
+}
+
+.contact__wrapper a:hover {
+    background: transparent;
+    border-color: var(--color-gray-100);
+}
+
+
+.contact-form{
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 80vh;
+    margin-top: 4rem;
+      /* scroll */
+  padding-top: 3rem;
+}
+
+.c-right{
+   
+    display: flex;
+    justify-content: right;
+    position: relative;
+    flex: 1;
+}
+
+.c-right>form
+{
+    width: 90vh;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    background-color: teal;
+    
+}
+
+.c-right .user{
+    width: 30rem;
+    height: 2.5rem;
+    padding: 0.3em;
+    outline: none;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    font-size: 16px;   
+}
+
+textarea{
+    height: 4rem!important;
+}
+
+.c-blur1{
+    top: 1rem;
+    left: 8rem;
+}
+
+.google-map{
+
+    display: grid;
+    padding: 1rem;
+    /* display: flex; */
+    border-radius: 30px;
+    box-shadow: 0 0 10px black;
+    
+    width: 450px;
+    height: 375px; 
+    position: relative;
+    
+}
+
+/* @media screen and (max-width: 780px) {
+
+
+}   */
+
+@media screen and (max-width: 600px) {
+    .contact__wrapper {
+        gap: 1.5rem;
+        background-color: black;
+    }
+
+    .contact__wrappera {
+        
+        padding: 1rem;
+        font-size: 1.2rem;
+        border-radius: 1rem;
+    }
+
+    .contact-form{
+      
+        padding: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 40rem;
+    }
+    .c-right .user{
+        width: 16rem;
+    }
+}
+
+
+.bg-teal , .btn-teal{
+    background-color: #27ddde !important;
+}
+.text-teal{
+    color: #27ddde !important;
+}
+.bg-dark , .btn-dark{
+    background: linear-gradient(45deg,black,darkslategrey) !important;
+}
+.btn{
+    border-radius: 80px;
+}
